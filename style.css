@@ -1,0 +1,62 @@
+:root {
+    --review-width: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.reviewSlider {
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    width: var(--review-width);
+    overflow: hidden;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+    z-index: 0;
+    border: 2px solid gray;
+}
+
+.reviewDisplayBox {
+    display: flex;
+    width: 33.3333%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.reviewSlide {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    align-items: center;
+    min-width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 50;
+    border: 1px solid gray;
+}
+
+.stars {
+    margin-bottom: 1rem;
+    color: black;
+    font-size: 1.5rem;
+}
+
+.review {
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.name {
+    text-align: center;
+}
